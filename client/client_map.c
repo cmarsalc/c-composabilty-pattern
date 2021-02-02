@@ -1,5 +1,6 @@
 #include "client_private.h"
 #include "service_impl.h"
+#include "service_impl_partial.h"
 
 const sClientMap ClientMap[NUM_OF_CLIENTS] = {
     [CLIENT1] = {
@@ -16,4 +17,10 @@ const sClientMap ClientMap[NUM_OF_CLIENTS] = {
     },
     [CLIENT3] = {
     },
+    [CLIENT4] = {
+        .service = {
+            .id = SERVICE_IMPL_PARTIAL_A,
+            .api = &ServiceImplPartialApi,
+        }
+    }
 };
