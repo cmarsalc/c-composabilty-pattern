@@ -1,7 +1,6 @@
 CC = gcc
 SRC_FILES = $(shell find -name "*.c")
-INC_FILES = $(shell find -name "*.h")
-INC_DIRS = $(shell find -type d)
+INC_DIRS = $(shell find -name "*.h" | while read i; do dirname "$$i"; done | uniq)
 INC_FLAGS = $(INC_DIRS:%=-I%)
 OBJ = $(SRC_FILES:.c=.o)
 

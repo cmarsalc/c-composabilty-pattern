@@ -1,11 +1,11 @@
 #ifndef SERVICE_IMPL_H_
 #define SERVICE_IMPL_H_
 
-#include "iservice.h"           // implements
+#include "service.h"            // implements
 #include "service_impl_map.h"   // expose instances
 
 // In case you need to bind the API anywhere so it can be used as an interface
-extern const iServiceApi ServiceImplApi;
+extern const iService ServiceImplApi;
 
 // Expose API in case the service implementation is to be used directly and not via the interface
 void ServiceImpl_Foo(uint8_t id, const char* text);

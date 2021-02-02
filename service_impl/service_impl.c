@@ -3,7 +3,7 @@
 #include "service_impl.h"           // implements
 #include "service_impl_private.h"   // uses internal declarations 
 
-const iServiceApi ServiceImplApi = {
+const iService ServiceImplApi = {
     .foo = ServiceImpl_Foo,
     .bar = ServiceImpl_Bar,
 };

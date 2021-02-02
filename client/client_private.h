@@ -2,10 +2,10 @@
 #define CLIENT_PRIVATE_H_
 
 #include "client_map.h"
-#include "iservice.h"
+#include "service.h"
 
 typedef struct {
-    oService serviceObj;
+    Service service;
 } sClientMap;
 
 extern const sClientMap ClientMap[NUM_OF_CLIENTS];

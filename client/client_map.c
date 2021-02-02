@@ -3,13 +3,13 @@
 
 const sClientMap ClientMap[NUM_OF_CLIENTS] = {
     [CLIENT1] = {
-        .serviceObj = {
+        .service = {
             .id = SERVICE_IMPL_A,
             .api = &ServiceImplApi,
         },
     },
     [CLIENT2] = {
-        .serviceObj = {
+        .service = {
             .id = SERVICE_IMPL_B,
             .api = &ServiceImplApi,
         },
