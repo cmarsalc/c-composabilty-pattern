@@ -14,4 +14,6 @@ const sClientMap ClientMap[NUM_OF_CLIENTS] = {
             .api = &ServiceImplApi,
         },
     },
+    [CLIENT3] = {
+    },
 };
